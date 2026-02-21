@@ -5,9 +5,33 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+.nav-list {
+  display: flex; /* Makes the list items arrange horizontally */
+  list-style-type: none; /* Removes the default bullet points */
+  margin: 0; /* Removes default browser margins */
+  padding: 0; /* Removes default browser padding */
+  justify-content: space-around; /* Distributes items evenly with space around them */
+}
+
+.nav-list li a {
+  /* display: block; Makes the entire link area clickable and styleable */
+  padding: 14px 16px; /* Adds space around the links */
+  text-decoration: none; /* Removes underlines from links */
+  color: rgb(251, 251, 251); /* Sets text color */
+}
+
+.nav-list li a:hover {
+  background-color: #1cdb19; /* Adds a hover effect */
+}
+
 
 body {
-    background: #0d0d0d;
+    background-image: url('Tech\ Background\ Gif.gif'); /* Specifies the image file */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Scales the image to cover the entire container */
+    background-position: center; /* Centers the image within the container */
+    background-attachment: fixed; /* Fixes the image during scrolling for a parallax effect */
+    background-color: #cccccc; /* Fallback color if the image fails to load */
     color: #e7e7e7;
 }
 
