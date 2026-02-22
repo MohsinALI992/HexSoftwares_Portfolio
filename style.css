@@ -130,6 +130,12 @@ section::before {
     height: 220px;
     object-fit: cover;
 }
+/* GET IN TOUCH */
+.info-list li {
+    margin: 12px 0;
+    font-size: 18px;
+    color: #00ff7f;
+}
 
 /* CONTACT FORM */
 form input, form textarea {
