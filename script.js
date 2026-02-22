@@ -1,20 +1,22 @@
-// INIT EMAILJS
+// INIT EMAILJS 
 (function() {
-    emailjs.init("YOUR_EMAILJS_PUBLIC_KEY"); 
+    emailjs.init("bRoEHR6pCat6Ltu-x"); 
 })();
 
 // CONTACT FORM SUBMIT
 document.getElementById("contactForm").addEventListener("submit", function(e){
     e.preventDefault();
 
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+    emailjs.send("service_zubs8v1", "template_zyidz2h", {
         from_name: document.getElementById("name").value,
         email_id: document.getElementById("email").value,
         message: document.getElementById("message").value,
+    }).then(function() {
+        alert("Message Sent Successfully!");
+        document.getElementById("contactForm").reset();
+    }, function(error) {
+        alert("Failed to send message: " + JSON.stringify(error));
     });
-
-    alert("Message Sent Successfully!");
-    document.getElementById("contactForm").reset();
 });
 
 // SMOOTH SCROLL
