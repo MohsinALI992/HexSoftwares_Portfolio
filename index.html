@@ -3,48 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mohsin Ali - Portfolio</title>
+    <title>Mohsin Ali | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <nav class="navbar">
-        <ul class="nav-list">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#experience">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section id="hero" class="hero-section">
       <div class="hero-content">
-        <img src="profilepic.PNG" alt="Profile Image" class="hero-img" />
+        <div class="hero-img-container">
+          <img src="profilepic.PNG" alt="Profile Photo" class="hero-img" />
+        </div>
         <h1>Mohsin Ali</h1>
         <p>Front-End Developer | Software Engineer</p>
         <a href="#contact" class="btn">Contact Me</a>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
       <h2>About Me</h2>
-      <div class="card about-card">
-        <p>
-          I am a BS Software Engineering student passionate about building
-          clean, modern, and responsive web interfaces. I focus on HTML, CSS,
-          and beginner JavaScript, and I am currently enhancing my skills
-          through real-world internship experience.
-        </p>
+      <div class="about-box">
+        I am a BS Software Engineering student passionate about building clean,
+        modern, and responsive web interfaces. I focus on HTML, CSS, and
+        beginner JavaScript, and I am currently enhancing my skills through
+        real-world internship experience.Above all i am a software Engineering
+        student exploring software development techniques and methodologies with
+        strong software requirement Engineering practices and quality
+        assuarance.
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="section">
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section">
       <h2>Skills</h2>
-      <ul class="skill-list">
+      <ul class="skills-list">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript (Basic)</li>
@@ -54,46 +57,67 @@
       </ul>
     </section>
 
-    <!-- PROJECTS / EXPERIENCE -->
-    <section class="section">
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
       <h2>Projects & Experience</h2>
 
-      <div class="project-card">
-        <img src="Portfolio.PNG" class="project-img" alt="Project Image" />
-        <h3>Front-End Developer Intern – HexSoftwares</h3>
-        <p>
-          Contributing to front-end tasks, UI building, CSS layout improvements,
-          and understanding real development workflows.
-        </p>
-        <a href="#" class="project-btn">View Project</a>
-      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="Portfolio.PNG" alt="Project 1" />
+          <div class="project-info">
+            <h3>Front-End Developer Intern – HexSoftwares</h3>
+            <p>
+              Worked on UI building, CSS improvements, layout fixes, and
+              real-world development workflow.
+            </p>
+            <a
+              href="https://github.com/MohsinALI992"
+              target="_blank"
+              class="project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
 
-      <div class="project-card">
-        <img src="ML .PNG" class="project-img" alt="Project Image" />
-        <h3>Flask Chatbot Project</h3>
-        <p>
-          Created a chatbot using Python + Flask to handle message routing and
-          simple responses.
-        </p>
-        <a href="#" class="project-btn">View Project</a>
+        <div class="project-card">
+          <img src="ML .PNG" alt="Project 2" />
+          <div class="project-info">
+            <h3>AI Lab Project – ML Model</h3>
+            <p>
+              Worked with Python, basic ML models, data processing, and
+              algorithm testing.
+            </p>
+            <a
+              href="https://github.com/MohsinALI992"
+              target="_blank"
+              class="project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- CONTACT FORM -->
-    <section class="section" id="contact">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
       <h2>Contact Me</h2>
 
-      <form class="contact-form">
-        <input type="text" placeholder="Your Full Name" required />
-        <input type="email" placeholder="Your Email Address" required />
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Full Name" required />
+        <input
+          type="email"
+          id="email"
+          placeholder="Your Email Address"
+          required
+        />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
       </form>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <p>© 2024 Mohsin Ali | All Rights Reserved</p>
-    </footer>
+    <footer>© 2026 Mohsin Ali | All Rights Reserved</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
