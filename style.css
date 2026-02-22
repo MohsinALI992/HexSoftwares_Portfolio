@@ -130,11 +130,32 @@ section::before {
     height: 220px;
     object-fit: cover;
 }
-/* GET IN TOUCH */
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
 .info-list li {
-    margin: 12px 0;
-    font-size: 18px;
-    color: #00ff7f;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-list li i {
+  font-size: 1.4rem;
+  color: #00ff9d; /* neon green */
+}
+
+.info-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.info-list li a:hover {
+  text-decoration: underline;
 }
 
 /* CONTACT FORM */
